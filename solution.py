@@ -23,32 +23,23 @@
 def prime_number(num):
     """Return true or false if the given number is prime."""
 
+    outcome = False
 
     if num > 1:
 
         for i in range(2, num):
             if num % i == 0:
-                print('not prime')
+                outcome
                 break
         else: 
-            print('prime')
+            outcome = True
+            return outcome
     else:
-        print('not prime')
-        # return outcome
-            # if num % i != 0:
-            #     outcome = True
-            # else:
-            #     outcome = False 
-            # return outcome
-
-
-    # if num // num == 0 and num // 1 == 0:
-    #     return True 
-    # else:
-    #     return False
+        return outcome
 
 
 print(prime_number(1)) #false
 print(prime_number(2)) #true
 print(prime_number(-1)) #false
 print(prime_number(19)) #true
+print(prime_number(13)) #true
