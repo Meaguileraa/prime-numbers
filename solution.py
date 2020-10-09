@@ -1,3 +1,5 @@
+
+
 # Define a function that takes one integer argument and 
 # returns logical value true or false depending on if the integer is a prime.
 
@@ -18,3 +20,12 @@
 # is_prime(1)  /* false */
 # is_prime(2)  /* true  */
 # is_prime(-1) /* false */
+
+
+def prime_number(num):
+    """Return true or false if the given number is prime."""
+
+
+print(prime_number(1)) #false
+print(prime_number(2)) #true
+print(prime_number(-1)) #false
