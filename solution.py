@@ -16,16 +16,39 @@
 # Looping all the way up to n, or n/2, will be too slow.
 
 
-# Example
-# is_prime(1)  /* false */
-# is_prime(2)  /* true  */
-# is_prime(-1) /* false */
 
+
+# A prime number is a number that can only be divided by itself and 1. 
 
 def prime_number(num):
     """Return true or false if the given number is prime."""
 
 
+    if num > 1:
+
+        for i in range(2, num):
+            if num % i == 0:
+                print('not prime')
+                break
+        else: 
+            print('prime')
+    else:
+        print('not prime')
+        # return outcome
+            # if num % i != 0:
+            #     outcome = True
+            # else:
+            #     outcome = False 
+            # return outcome
+
+
+    # if num // num == 0 and num // 1 == 0:
+    #     return True 
+    # else:
+    #     return False
+
+
 print(prime_number(1)) #false
 print(prime_number(2)) #true
 print(prime_number(-1)) #false
+print(prime_number(19)) #true
